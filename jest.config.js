@@ -3,7 +3,6 @@
  * https://jestjs.io/docs/configuration
  */
 
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
 module.exports = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
@@ -160,10 +159,7 @@ module.exports = {
   // ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: [
-    "<rootDir>/node_modules/",
-    "<rootDir>/dist/",
-  ],
+  testPathIgnorePatterns: ["<rootDir>/node_modules/", "<rootDir>/dist/"],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
   // testRegex: [],
@@ -178,8 +174,8 @@ module.exports = {
   transform: {
     // '^.+\\.[tj]sx?$' to process js/ts with `ts-jest`
     // '^.+\\.m?[tj]sx?$' to process js/ts/mjs/mts with `ts-jest`
-    '^.+\\.tsx?$': [
-      'ts-jest',
+    "^.+\\.tsx?$": [
+      "ts-jest",
       {
         // ts-jest configuration goes here
       },
@@ -187,9 +183,7 @@ module.exports = {
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  transformIgnorePatterns: [
-    "<rootDir>/node_modules/",
-  ],
+  transformIgnorePatterns: ["<rootDir>/node_modules/"],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
